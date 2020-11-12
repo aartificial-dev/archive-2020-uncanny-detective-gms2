@@ -1,15 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//list_evidence = ds_list_create();
-//list_profiles = ds_list_create();
-//list_themes = ds_list_create();
-
-//ds_list_add(list_evidence, new Evidence("Pistol", spr_evidence, 1));
-//ds_list_add(list_evidence, new Evidence("Knife", spr_evidence, 2));
-
-//ds_list_add(list_profiles, new Profile("Me", spr_profiles, 1));
-//ds_list_add(list_profiles, new Profile("Mr. Shade", spr_profiles, 2));
 
 surface_set_target(obj_cam.gui_surf);
 draw_set_font(fnt_pixel);
