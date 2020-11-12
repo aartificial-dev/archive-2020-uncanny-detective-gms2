@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Interact
 // You can write your code in this editor
 
 interact_npc = noone;
@@ -8,23 +8,25 @@ let view_y = obj_cam.view_y;
 let mx = mouse_x - view_x;
 let my = mouse_y - view_y;
 let can_click = !(collision_point(mx, my, par_gui, 0, 1));
+let dist = point_distance(x, y, mouse_x, mouse_y);
 
 let collide = collision_point(mouse_x, mouse_y, par_item, 0, 1);
-if (collide && can_click) {
+if (collide && can_click && dist < 75) {
 	interact_item = collide;
 }
 
-if (interact_item && mouse_check_button_pressed(mb_right) && can_click) {
+if (interact_item && mouse_check_button_pressed(mb_right) && can_click && !talking) {
 	with (interact_item) {
 		event_user(0);
 	}
+	interact_item = noone;
 }
 collide = collision_point(mouse_x, mouse_y, par_npc, 0, 1);
-if (collide && can_click) {
+if (collide && can_click && dist < 75) {
 	interact_npc = collide;
 }
 
-if (interact_npc && mouse_check_button_pressed(mb_right) && can_click) {
+if (interact_npc && mouse_check_button_pressed(mb_right) && can_click && !talking) {
 	with (interact_npc) {
 		event_user(0);
 	}

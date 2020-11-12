@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Drawing player
 // You can write your code in this editor
 
 if (spr_dir = pl_dir.s) {

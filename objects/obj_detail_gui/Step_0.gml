@@ -49,8 +49,8 @@ if (point_in_rectangle(mx, my, x + 1, y + 67, x + 78, y + 75)) {
 		}
 	} else if (obj_pl.talking) {
 		cursor = cursor_type.finger;
-		if (mlb) {
-			// present
+		if (mlb && obj_pl.talking.cur_dia == noone) {
+			obj_pl.talking.present = item;
 			audio_play_sound(snd_button, 0, 0);
 		}
 	}
