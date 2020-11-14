@@ -21,7 +21,7 @@ draw_text_col(x + 2, y + 2, "Detail", c_black,  1);
 if (instanceof(item) == "Tool") {
 	draw_text_col(x + 2, y + 68, "Equip", c_black,  1);
 } else {
-	let col = obj_pl.talking ? ((obj_pl.talking.cur_dia == noone) ? c_black : c_dkgray) : c_dkgray;
+	let col = obj_pl.talking ? ((obj_pl.talking.cur_dia == noone && obj_pl.talking.alarm[0] == -1) ? c_black : c_dkgray) : c_dkgray;
 	draw_text_col(x + 2, y + 68, "Present", col,  1);
 }
 
