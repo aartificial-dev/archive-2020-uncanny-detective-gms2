@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Camera movement
 // You can write your code in this editor
 
 let camera = view_camera[0];

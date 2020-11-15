@@ -1,17 +1,25 @@
-/// @description Insert description here
+/// @description 
 // You can write your code in this editor
 
 a_ratio = 16/9;
 
-view_width = 320;
+view_scale = 1;
+gui_scale = 1;
+
+
+view_width = 320 * view_scale;
 view_height = view_width / a_ratio;
 
-window_scale = 4;
+gui_width = view_width * gui_scale;
+gui_height = view_height * gui_scale;
+
+
+window_scale = 4 / view_scale;
 
 window_set_size(view_width * window_scale, view_height * window_scale);
 alarm[0] = 1;
 surface_resize(application_surface, view_width * window_scale, view_height * window_scale);
-display_set_gui_size(view_width, view_height);
+display_set_gui_size(gui_width, gui_height);
 
 view_x = 0;
 view_y = 0;

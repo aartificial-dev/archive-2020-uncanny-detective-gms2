@@ -9,3 +9,7 @@ if (instance_number(obj_detail_gui) > 1) {
 drag = 0;
 st_x = x;
 st_y = y;
+
+previtem = noone;
+curline = 0;
+text = "";

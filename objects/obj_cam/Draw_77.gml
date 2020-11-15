@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Shaders
 // You can write your code in this editor
 
 //shader_set(shd_blur);

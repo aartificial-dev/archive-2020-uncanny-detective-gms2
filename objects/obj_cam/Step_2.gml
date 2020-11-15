@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Surfaces check
 // You can write your code in this editor
 
 if (!surface_exists(normal_surf)) {
@@ -20,7 +20,7 @@ if (!surface_exists(vhs_surf)) {
 	vhs_surf = surface_create(view_width * window_scale, view_height * window_scale);
 }
 if (!surface_exists(gui_surf)) {
-	gui_surf = surface_create(view_width, view_height);
+	gui_surf = surface_create(gui_width, gui_height);
 }
 
 if (keyboard_check_pressed(vk_f12)) {

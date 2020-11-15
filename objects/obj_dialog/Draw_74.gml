@@ -5,16 +5,14 @@
 surface_set_target(obj_cam.gui_surf);
 draw_set_font(fnt_pixel);
 
-let view_height = obj_cam.view_height;
-let view_width = obj_cam.view_width;
-let view_x = obj_cam.view_x;
-let view_y = obj_cam.view_y;
-let mx = mouse_x - view_x;
-let my = mouse_y - view_y;
+let gui_width = obj_cam.gui_width;
+let gui_height = obj_cam.gui_height;
+let mx = device_mouse_x_to_gui(0);
+let my = device_mouse_y_to_gui(0);
 let can_click = !(collision_point(mx, my, par_gui, 0, 1));
 
-let dia_x = view_width / 2;
-let dia_y = view_height - 20;
+let dia_x = gui_width / 2;
+let dia_y = gui_height - 20;
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_sprite(spr_dialog, 0, dia_x, dia_y);

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Apply view
 // You can write your code in this editor
 
 view_enabled = true;

@@ -1,11 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-let view_width = obj_cam.view_width;
-let view_height = obj_cam.view_height;
-let view_x = obj_cam.view_x;
-let view_y = obj_cam.view_y;
-let mx = mouse_x - view_x;
-let my = mouse_y - view_y;
+let gui_width = obj_cam.gui_width;
+let gui_height = obj_cam.gui_height;
+let mx = device_mouse_x_to_gui(0);
+let my = device_mouse_y_to_gui(0);
 let mw = mouse_wheel_down() - mouse_wheel_up();
 let mlb = mouse_check_button_pressed(mb_left);
 let tab = obj_pl.notes_tab;
@@ -97,7 +95,7 @@ for (let i = 0; i < size; i ++) {
 
 
 
-x = clamp(x, 0, view_width - sprite_get_width(sprite_index));
-y = clamp(y, 0, view_height - sprite_get_height(sprite_index));
+x = clamp(x, 0, gui_width - sprite_get_width(sprite_index));
+y = clamp(y, 0, gui_height - sprite_get_height(sprite_index));
 
 obj_pl.notes_offset = vec2(x, y);

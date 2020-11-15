@@ -7,6 +7,8 @@ list_tools = ds_list_create();
 
 ds_list_add(list_profiles, new Profile("Me", spr_profiles, 1, "I'm detective."));
 
+ds_list_add(list_profiles, new Profile("MeA", spr_profiles, 1, "1 1 1 1 1 1 2 2 2 2 2 2 3 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7"));
+
 interact_item = noone;
 interact_npc = noone;
 

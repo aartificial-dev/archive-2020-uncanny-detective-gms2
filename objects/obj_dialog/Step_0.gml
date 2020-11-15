@@ -1,14 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-let view_height = obj_cam.view_height;
-let view_width = obj_cam.view_width;
-let view_x = obj_cam.view_x;
-let view_y = obj_cam.view_y;
-let mx = mouse_x - view_x;
-let my = mouse_y - view_y;
-let dia_x = view_width / 2;
-let dia_y = view_height - 20;
+let gui_width = obj_cam.gui_width;
+let gui_height = obj_cam.gui_height;
+let mx = device_mouse_x_to_gui(0);
+let my = device_mouse_y_to_gui(0);
+let dia_x = gui_width / 2;
+let dia_y = gui_height - 20;
 let can_click = !(collision_point(mx, my, par_gui, 0, 1));
 let mb = mouse_check_button_pressed(mb_left);
 

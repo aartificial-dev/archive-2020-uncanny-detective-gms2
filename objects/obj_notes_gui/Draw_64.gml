@@ -6,12 +6,10 @@ draw_set_font(fnt_pixel);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-let view_height = obj_cam.view_height;
-let view_width = obj_cam.view_width;
-let view_x = obj_cam.view_x;
-let view_y = obj_cam.view_y;
-let mx = mouse_x - view_x;
-let my = mouse_y - view_y;
+let gui_width = obj_cam.gui_width;
+let gui_height = obj_cam.gui_height;
+let mx = device_mouse_x_to_gui(0);
+let my = device_mouse_y_to_gui(0);
 
 let can_click = !collision_point(mx, my, obj_detail_gui, 0, 1);
 

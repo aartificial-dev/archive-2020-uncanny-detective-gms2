@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_dialog",
-    "path": "sprites/spr_dialog/spr_dialog.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
